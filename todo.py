@@ -12,6 +12,9 @@
 #
 #
 from flask import *
+import os
+import json
+
 app = Flask(__name__)
 @app.route('/')
 
@@ -36,5 +39,6 @@ def get_todos():
     return resp
 
 if __name__ == '__main__':
+    port= os.eviron.get('PORT',5000)
     app.run(debug=True, host='0.0.0.0')
     
