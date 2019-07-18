@@ -1,0 +1,24 @@
+<html>
+    <head><title>form/gloCode</title></head>
+    <body>
+        <header>
+        <h1>To do list</h1>
+        </header>
+        <main>
+        <form action="/todo">
+            <label>
+            To do item
+            <input type="text" name="item"/>
+        
+            </label>
+        </form>
+        <ol>
+        {%for item in items%}
+        <li> {{item}}</li>
+        {%endfor%}
+        </ol>
+        </main>
+        <footer>
+    <body>
+    
+</html>
