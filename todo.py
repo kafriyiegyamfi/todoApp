@@ -1,16 +1,3 @@
-#from flask import Flask
-# 
-#app = Flask(__name__)
-# 
-#@app.route('/')
-#def index():
-#    return 'Hello world'
-#
-#@app.route('/whereami')
-#def whereami():
-#    return 'Ghana!'
-#
-#
 from flask import *
 import os
 import json
@@ -40,5 +27,5 @@ def get_todos():
 
 if __name__ == '__main__':
     port= os.eviron.get('PORT',5000)
-    app.run(debug=True, host='0.0.0.0')
+    app.run(debug=True, host='0.0.0.0', port=port)
     
